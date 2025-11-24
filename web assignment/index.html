@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amay Naik | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <aside class="sidebar">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#resume">📄 Resume</a></li>
+        <li><a href="#bio">🧍 Bio-data</a></li>
+        <li><a href="#contact">✉️ Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-intro">
+        <h1>Hello, I’m <span>Amay Naik</span></h1>
+        <p>A passionate <strong>Software Developer</strong> exploring Frontend & Backend technologies.</p>
+        <div class="buttons">
+          <button class="btn scroll-btn" data-target="#resume">View Resume</button>
+          <button class="btn outline scroll-btn" data-target="#bio">View Bio-data</button>
+          </div>
+      </div>
+    </section>
+
+    <section id="resume" class="resume-paper">
+      <h1 class="resume-name">AMAY NAIK</h1>
+      <p class="resume-contact">Mangalore · India · 7330750808 · amay@123gmail.com</p>
+      <hr />
+
+      <h2>OBJECTIVE</h2>
+      <p>To apply my skills as a software developer in a professional environment while continuing to grow.</p>
+
+      <h2>EDUCATION</h2>
+      <div class="resume-entry">
+        <span><strong>Canara Engineering College</strong> — BCS</span>
+        <span>Present</span>
+      </div>
+
+      <div class="resume-entry">
+        <span><strong>Narayana Jr College</strong> — High School</span>
+        <span>Completed</span>
+      </div>
+
+      <h2>WORK EXPERIENCE</h2>
+      <div class="resume-entry">
+        <span><strong>Software Developer (Student)</strong></span>
+        <span>Present</span>
+      </div>
+      <ul>
+        <li>Learning frontend & backend development.</li>
+        <li>Building real-world projects and improving skills.</li>
+      </ul>
+
+      <div class="resume-entry">
+        <span><strong>Intern — Aadi Foundation × Microsoft</strong></span>
+        <span>2024</span>
+      </div>
+      <ul>
+        <li>Completed tasks and learned industry workflows.</li>
+      </ul>
+
+      <h2>SKILLS</h2>
+      <ul class="skills-columns">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React.js</li><li>Node.js</li>
+        <li>Python</li><li>Django</li><li>SQL</li><li>MongoDB</li><li>UI/UX</li>
+      </ul>
+    </section>
+
+    <section id="bio" class="bio-section">
+      <h2>Bio-data</h2>
+      <div class="bio-grid">
+        <div><strong>Name:</strong> Amay Naik</div>
+        <div><strong>Date of Birth:</strong> 10 / 10 / 2005</div>
+        <div><strong>Gender:</strong> Male</div>
+        <div><strong>Nationality:</strong> Indian</div>
+        <div><strong>Address:</strong> Mangalore</div>
+        <div><strong>Email:</strong> amay@123gmail.com</div>
+        <div><strong>Phone:</strong> 7330750808</div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations or job opportunities.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Initial setup: Hide all sections except 'Home'
+    $(document).ready(function() {
+      // Hide all sections except the one currently visible on load (#home)
+      $("#resume, #bio, #contact").hide();
+      $("#home").show(); 
+    });
+  </script>
+</body>
+</html>
